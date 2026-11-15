@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #f0e7d4;
+    --secondary: #d8ccb8;
+    --accent: #b59a62;
+
+    --bg: #faf7f0;
+    --text: #34332f;
+
+    --stone: #a99d8b;
+    --silver: #a8a9a6;
+
+    --font-primary: "DM Serif Display", serif;
+    --font-secondary: "Luxurious Script", cursive;
+    
+    
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-2xl: 3rem;
+    --fs-3xl: 4rem;
+    
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --line-height-sm: 0.75;
+    --line-height-base: 1.5;
+    --line-height-lg: 1.25;
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    --header-height: 70px;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.landing_page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(placeholder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing_title_container{
+    width: fit-content;
+    text-align: center;
+}
+
+.landing_title{
+    color: var(--text);
+}
+
+#line1{
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-primary);
+    font-size: var(--fs-3xl);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-sm);
+}
+
+#line2{
+    margin-top: var(--space-xs);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-3xl);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-sm);
+}
+
+.landing_button{
+    width: 10vw;
+    height: 5vh;
+    background-color: var(--text);
+    color: var(--bg);
+    margin: var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--border-radius-md);
+}
+
+.about_page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--bg);
+}
+
+.about_title{
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-2xl);
+    color: var(--text);
+}
+
+.about_content{
+    width: 50vw;
+    height: 100vh;
+    padding: 50px;
+    justify-items: center;
+    align-content: center;
+    color: var(--text);
+}
+
+.about_image{
+    width: 50vw;
+    height: 100vh;
+}
+
+.about_text{
+    width: 70%;
+    font-size: var(--fs-lg);
+    text-align: center;
+}
+
+.product_page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_grid{
+    display: flex;
+    width: 75vw;
+    height: 90vh;
+}
+
+.contact_page{
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    background-color: var(--bg);
+}
+
+.contact_form{
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: var(--border-radius-md);
+}
+
+.contact_group{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: var(--text);
+}
+
+.contact_title{
+    font-size: var(--fs-xl);
+    margin: var(--space-md);
+    font-family: var(--font-primary);
+}
+
+.contact_group label{
+    font-size: var(--fs-lg);
+    margin: var(--space-sm);
+    padding: var(--space-sm);
+    font-family: var(--font-primary);
+}
+
+.contact_group input{
+    width: 30vw;
+    height: 5vh;
+    margin: var(--space-sm);
+    padding: var(--space-sm);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--fs-base);
+    background-color: var(--primary);
+    border: 1px solid var(--text);
+}
+
+.submit_button{
+    width: 10vw;
+    height: 5vh;
+    margin: var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--fs-base);
+    background-color: var(--text);
+    color: var(--bg);
+}
