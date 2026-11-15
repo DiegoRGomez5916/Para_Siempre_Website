@@ -148,8 +148,36 @@
 
 .product_grid{
     display: flex;
+    gap: var(--space-lg);
     width: 75vw;
-    height: 90vh;
+    height: 75vh;
+    padding: var(--space-lg);
+}
+
+.product_card{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+}
+
+.price-item {
+    width: 75%;
+    display: flex;
+    gap: var(--space-sm);
+    margin: var(--space-md ) var(--space-md);
+}
+
+.line {
+    flex: 1;
+    border-bottom: 2px dashed #a49b8b;
+    align-self: center;
 }
 
 .contact_page{
